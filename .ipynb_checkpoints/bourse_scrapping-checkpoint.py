@@ -56,7 +56,7 @@ rows = table.find_elements_by_xpath(".//tr")
 
 listRows = []
 
-for row in rows[:10]:
+for row in rows:
     singleRow = [td.text for td in row.find_elements_by_xpath(".//td")]
     singleRow = list(filter(None,singleRow))
     listRows.append(singleRow)
